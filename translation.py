@@ -1,3 +1,21 @@
+class ANSI(): 
+
+    def background(code): 
+
+        return "\33[{code}m".format(code=code) 
+
+  
+
+    def style_text(code): 
+
+        return "\33[{code}m".format(code=code) 
+
+  
+
+    def color_text(code): 
+
+        return "\33[{code}m".format(code=code) 
+
 class Translation(object):
     START_TEXT = """Hello🤝 {},
 This is a FREE Telegram YouTube Downloader Bot! """ + ANSI.color_text(35) +"""
