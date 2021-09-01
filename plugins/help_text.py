@@ -10,6 +10,10 @@ logger = logging.getLogger(__name__)
 
 import os
 import sqlite3
+#color the text
+import colorama
+from colorama import Fore
+
 
 # the secret configuration specific things
 if bool(os.environ.get("WEBHOOK", False)):
