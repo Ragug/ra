@@ -12,7 +12,8 @@ import os
 import sqlite3
 #color the text
 import colorama
-from colorama import Fore
+from colorama 
+import Fore
 colorama.init(autoreset=True)
 
 
