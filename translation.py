@@ -1,6 +1,6 @@
 class Translation(object):
     START_TEXT = """Hello🤝 {},
-This is a FREE Telegram YouTube Downloader Bot!
+This is a FREE Telegram YouTube Downloader Bot! """ + Fore.RED +"""
 
 <b>Please send me any direct download URL Link, I can upload to telegram as File/Video</b>
 
