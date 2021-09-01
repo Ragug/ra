@@ -13,6 +13,7 @@ import sqlite3
 #color the text
 import colorama
 from colorama import Fore
+colorama.init(autoreset=True)
 
 
 # the secret configuration specific things
