@@ -14,18 +14,18 @@
 
     def color_text(code): 
 
-        return "\33[{code}m".format(code=code) '''
+        return "\33[{code}m".format(code=code) 
 
 import colorama
 from colorama import Fore
-colorama.init(autoreset=True)
+colorama.init(autoreset=True)'''
 
 
 class Translation(object):
     START_TEXT = """Hello🤝 {},
-This is a FREE Telegram YouTube Downloader Bot! """ + Fore.RED +"""
+This is a FREE Telegram YouTube Downloader Bot!
 
-<b>Please send me any direct download URL Link, I can upload to telegram as File/Video</b>
+<pre>Please send me any direct download URL Link, I can upload to telegram as File/Video</pre>
 
 /help for more details..
 
