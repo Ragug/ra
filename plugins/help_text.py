@@ -64,6 +64,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 @pyrogram.Client.on_message(pyrogram.filters.command(["start"]))
 async def start(bot, update):
     # logger.info(update)
+    from colorama import Fore
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.START_TEXT.format(update.from_user.first_name),
