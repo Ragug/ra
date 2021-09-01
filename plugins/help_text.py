@@ -17,6 +17,7 @@ import Fore
 colorama.init(autoreset=True)
 
 
+
 # the secret configuration specific things
 if bool(os.environ.get("WEBHOOK", False)):
     from sample_config import Config
@@ -67,6 +68,7 @@ async def start(bot, update):
     from colorama import Fore
     await bot.send_message(
         chat_id=update.chat.id,
+        from colorama import Fore
         text=Translation.START_TEXT.format(update.from_user.first_name),
          reply_markup=InlineKeyboardMarkup([
         [InlineKeyboardButton("Telegram Sticker", url="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTc2ODU0NzI4Mzk4MjY5?")],
