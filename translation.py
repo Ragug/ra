@@ -1,4 +1,4 @@
-class ANSI(): 
+'''class ANSI(): 
 
     def background(code): 
 
@@ -14,11 +14,16 @@ class ANSI():
 
     def color_text(code): 
 
-        return "\33[{code}m".format(code=code) 
+        return "\33[{code}m".format(code=code) '''
+
+import colorama
+from colorama import Fore
+colorama.init(autoreset=True)
+
 
 class Translation(object):
     START_TEXT = """Hello🤝 {},
-This is a FREE Telegram YouTube Downloader Bot! """ + ANSI.color_text(35) +"""
+This is a FREE Telegram YouTube Downloader Bot! """ + Fore.RED +"""
 
 <b>Please send me any direct download URL Link, I can upload to telegram as File/Video</b>
 
