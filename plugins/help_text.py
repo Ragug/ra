@@ -10,11 +10,7 @@ logger = logging.getLogger(__name__)
 
 import os
 import sqlite3
-#color the text
-import colorama
-from colorama 
-import Fore
-colorama.init(autoreset=True)
+
 
 
 
@@ -65,10 +61,8 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 @pyrogram.Client.on_message(pyrogram.filters.command(["start"]))
 async def start(bot, update):
     # logger.info(update)
-    from colorama import Fore
     await bot.send_message(
         chat_id=update.chat.id,
-        from colorama import Fore
         text=Translation.START_TEXT.format(update.from_user.first_name),
          reply_markup=InlineKeyboardMarkup([
         [InlineKeyboardButton("Telegram Sticker", url="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTc2ODU0NzI4Mzk4MjY5?")],
